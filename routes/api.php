@@ -22,3 +22,4 @@ Route::middleware('checkAuth')->group(function () {
 });
 Route::get('/brands', 'App\Http\Controllers\Controller@brand');
 Route::get('/socket', 'App\Http\Controllers\Controller@socket');
+Route::get('/ram', 'App\Http\Controllers\Controller@ram');
