@@ -23,3 +23,10 @@ Route::middleware('checkAuth')->group(function () {
 Route::get('/brands', 'App\Http\Controllers\Controller@brand');
 Route::get('/socket', 'App\Http\Controllers\Controller@socket');
 Route::get('/ram', 'App\Http\Controllers\Controller@ram');
+Route::get('/reyt', 'App\Http\Controllers\Controller@reyt');
+Route::post('/motherboard', 'App\Http\Controllers\MotherboardController@create');
+Route::post('/processor', 'App\Http\Controllers\ProcessorController@create');
+Route::post('/memory', 'App\Http\Controllers\MemoryController@create');
+Route::post('/storage', 'App\Http\Controllers\StorageController@create');
+Route::post('/power', 'App\Http\Controllers\PowerController@create');
+

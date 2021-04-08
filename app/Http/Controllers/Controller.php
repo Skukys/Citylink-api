@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\BrandResource;
 use App\Models\Brand;
 use App\Models\RamType;
+use App\Models\Reyt;
 use App\Models\Socket;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -53,6 +54,15 @@ class Controller extends BaseController
         return response([
             'body' => [
                 'ramTypes' => BrandResource::collection(RamType::all())
+            ]
+        ]);
+    }
+
+    public function reyt()
+    {
+        return response([
+            'body' => [
+                'reyt' => BrandResource::collection(Reyt::all())
             ]
         ]);
     }
